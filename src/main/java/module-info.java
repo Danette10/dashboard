@@ -1,4 +1,4 @@
-module com.example.dashboard {
+module fr.cookorama.dashboard {
     requires javafx.controls;
     requires javafx.fxml;
             

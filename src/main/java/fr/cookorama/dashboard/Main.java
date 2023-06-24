@@ -13,7 +13,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("home.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
         scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
-        stage.setTitle("Hello!");
+        stage.setTitle("Dashboard");
         stage.setScene(scene);
         stage.show();
     }
