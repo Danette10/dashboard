@@ -14,11 +14,13 @@
     <junit.version>5.9.2</junit.version>      </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
       <version>20</version>
     </dependency>
+
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
@@ -37,12 +39,37 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>              </dependencies>
+    </dependency>
+
+    <dependency>
+      <groupId>com.java-curl</groupId>
+      <artifactId>java-curl</artifactId>
+      <version>1.0.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/src/libs/java-curl-1.2.2.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>com.json</groupId>
+      <artifactId>json-20230227</artifactId>
+      <version>1.0.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/src/libs/json-20230227.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>de.jensd</groupId>
+      <artifactId>fontawesomefx</artifactId>
+      <version>8.1</version>
+    </dependency>
+
+  </dependencies>
 
   <build>
         <plugins>
