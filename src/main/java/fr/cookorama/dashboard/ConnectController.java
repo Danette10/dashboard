@@ -54,7 +54,7 @@ public class ConnectController implements Initializable{
             String password = inputPassword.getText();
             String token = Token.getToken(email, password);
             if (token != null && token != "-1" && token != "-2") {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home.fxml"));
                 Parent root;
                 try {
                     root = fxmlLoader.load();
