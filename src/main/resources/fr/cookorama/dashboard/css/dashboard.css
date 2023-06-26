@@ -33,3 +33,26 @@
 .btnExit:pressed {
     -fx-background-color: #ef5350;
 }
+
+.mainPane {
+    -fx-background-color: #FF9B90;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.bntPane {
+    -fx-text-fill: #FF9B90;
+    -fx-background-color: #f5f5f5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.bntPane:hover {
+    -fx-background-color: #e87064;
+    -fx-text-fill: #f5f5f5;
+}
+
+.bntPane:pressed {
+    -fx-background-color: #c77269;
+    -fx-text-fill: #f5f5f5;
+}
