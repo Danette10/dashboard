@@ -4,6 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="600.0" prefWidth="1114.0" styleClass="btnPane" stylesheets="@css/dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.cookorama.dashboard.HomeController">
    <children>
@@ -16,10 +17,22 @@
             </ImageView>
             <Pane prefHeight="517.0" prefWidth="304.0" styleClass="mainPane" stylesheets="@css/dashboard.css">
                <children>
-                  <Button fx:id="btnHome" layoutX="80.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Accueil" />
-                  <Button fx:id="btnCustomers" layoutX="80.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Clients" />
-                  <Button fx:id="btnEvents" layoutX="80.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Evènements" />
-                  <Button fx:id="btnProduct" contentDisplay="TOP" layoutX="80.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Produits" />
+                  <Button fx:id="btnHome" layoutX="80.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Accueil">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnCustomers" layoutX="80.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Clients">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnEvents" layoutX="80.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Evènements">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnProduct" contentDisplay="TOP" layoutX="80.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Produits">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font></Button>
                      <Button fx:id="btnExit" layoutX="247.0" layoutY="465.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="35.0" prefWidth="43.0" styleClass="btnExit" stylesheets="@css/dashboard.css">
                          <graphic>
                              <FontAwesomeIcon fill="WHITE" iconName="SIGN_OUT" size="20" />
