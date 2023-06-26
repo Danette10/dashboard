@@ -8,6 +8,11 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1114.0" styleClass="btnPane" stylesheets="@css/dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.cookorama.dashboard.HomeController">
    <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="614.0" layoutY="63.0" prefHeight="46.0" prefWidth="150.0" style="-fx-text-fill: #FF9B90;" text="Accueil" underline="true">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
       <VBox prefHeight="600.0" prefWidth="304.0">
          <children>
             <ImageView fitHeight="117.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true">
@@ -41,5 +46,20 @@
                </children>
             </Pane>
          </children></VBox>
+      <Label fx:id="nbCustomer" alignment="CENTER" contentDisplay="CENTER" layoutX="351.0" layoutY="220.0" prefHeight="46.0" prefWidth="304.0" style="-fx-text-fill: #FF9B90;">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbEvents" alignment="CENTER" contentDisplay="CENTER" layoutX="715.0" layoutY="220.0" prefHeight="46.0" prefWidth="304.0" style="-fx-text-fill: #FF9B90;">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbProducts" alignment="CENTER" contentDisplay="CENTER" layoutX="503.0" layoutY="387.0" prefHeight="46.0" prefWidth="304.0" style="-fx-text-fill: #FF9B90;">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

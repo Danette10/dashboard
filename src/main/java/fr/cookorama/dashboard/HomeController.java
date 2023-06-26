@@ -33,6 +33,15 @@ public class HomeController implements Initializable {
     @FXML
     private Button btnExit;
 
+    @FXML
+    private Label nbCustomer;
+
+    @FXML
+    private Label nbEvents;
+
+    @FXML
+    private Label nbProducts;
+
     private String token;
 
     public void setToken(String token) {
@@ -41,6 +50,34 @@ public class HomeController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources){
+        int countCustomers = HomeData.getNbCustomers(token);
+        int countEvents = HomeData.getNbEvents(token);
+        int countProducts = HomeData.getNbProducts(token);
+
+        if(countCustomers == -1){
+            nbCustomer.setText("Erreur");
+        } else if (countCustomers == 0){
+            nbCustomer.setText("Aucun client");
+        } else {
+            nbCustomer.setText("Utilisateurs : " + countCustomers);
+        }
+
+        if(countEvents == -1){
+            nbEvents.setText("Erreur");
+        } else if (countEvents == 0){
+            nbEvents.setText("Aucun évènement");
+        } else {
+            nbEvents.setText("Evènements : " + countEvents);
+        }
+
+        if(countProducts == -1){
+            nbProducts.setText("Erreur");
+        } else if (countProducts == 0){
+            nbProducts.setText("Aucun produit");
+        } else {
+            nbProducts.setText("Produits : " + countProducts);
+        }
+
     }
 
     @FXML

@@ -7,7 +7,7 @@ import com.roxstudio.utils.CUrl;
 public class Token {
     public static String getToken(String email, String password) {
 
-        CUrl curl = new CUrl("http://localhost/api/user/connect");
+        CUrl curl = new CUrl("https://cookorama.fr/api/user/connect");
         String jsonPayload = "{\"email\": \"" + email + "\", \"password\": \"" + password + "\"}";
         curl.opt("-X", "POST");
         curl.data(jsonPayload);
