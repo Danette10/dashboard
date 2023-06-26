@@ -44,6 +44,45 @@ public class HomeController implements Initializable {
     private void handleClicks(ActionEvent event){
         if (event.getSource() == btnExit) {
             System.exit(0);
+        }else if (event.getSource() == btnCustomers) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("customers.fxml"));
+            Parent root;
+            try {
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Cookorama - Customers");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Stage) btnCustomers.getScene().getWindow()).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else if (event.getSource() == btnEvents) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("events.fxml"));
+            Parent root;
+            try {
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Cookorama - Events");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Stage) btnEvents.getScene().getWindow()).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else if (event.getSource() == btnProduct) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("products.fxml"));
+            Parent root;
+            try {
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Cookorama - Products");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Stage) btnProduct.getScene().getWindow()).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
