@@ -6,9 +6,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fr.cookorama.dashboard.EventsController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="600.0" prefWidth="1114.0" styleClass="btnPane" stylesheets="@css/dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.cookorama.dashboard.EventsController">
+    <children>
+        <VBox prefHeight="600.0" prefWidth="304.0">
+            <children>
+                <ImageView fitHeight="117.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.png" />
+                    </image>
+                </ImageView>
+                <Pane prefHeight="517.0" prefWidth="304.0" styleClass="mainPane" stylesheets="@css/dashboard.css">
+                    <children>
+                        <Button fx:id="btnHome" layoutX="80.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Accueil" />
+                        <Button fx:id="btnCustomers" layoutX="80.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Clients" />
+                        <Button fx:id="btnEvents" layoutX="80.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Evènements" />
+                        <Button fx:id="btnProduct" contentDisplay="TOP" layoutX="80.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="129.0" styleClass="bntPane" stylesheets="@css/dashboard.css" text="Produits" />
+                        <Button fx:id="btnExit" layoutX="247.0" layoutY="465.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="35.0" prefWidth="43.0" styleClass="btnExit" stylesheets="@css/dashboard.css">
+                            <graphic>
+                                <FontAwesomeIcon fill="WHITE" iconName="SIGN_OUT" size="20" />
+                            </graphic>
+                        </Button>
+                    </children>
+                </Pane>
+            </children></VBox>
+    </children>
 </AnchorPane>

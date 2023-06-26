@@ -5,7 +5,8 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class EventsController implements Initializable {
+public class EventsController extends HomeController implements Initializable {
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

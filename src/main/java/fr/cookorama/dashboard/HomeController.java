@@ -19,6 +19,9 @@ import java.util.ResourceBundle;
 public class HomeController implements Initializable {
 
     @FXML
+    private Button btnHome;
+
+    @FXML
     private Button btnCustomers;
 
     @FXML
@@ -50,7 +53,7 @@ public class HomeController implements Initializable {
             try {
                 root = fxmlLoader.load();
                 Stage stage = new Stage();
-                stage.setTitle("Cookorama - Customers");
+                stage.setTitle("Cookorama - Clients");
                 stage.setScene(new Scene(root));
                 stage.show();
                 ((Stage) btnCustomers.getScene().getWindow()).close();
@@ -63,7 +66,7 @@ public class HomeController implements Initializable {
             try {
                 root = fxmlLoader.load();
                 Stage stage = new Stage();
-                stage.setTitle("Cookorama - Events");
+                stage.setTitle("Cookorama - Evènements");
                 stage.setScene(new Scene(root));
                 stage.show();
                 ((Stage) btnEvents.getScene().getWindow()).close();
@@ -76,10 +79,23 @@ public class HomeController implements Initializable {
             try {
                 root = fxmlLoader.load();
                 Stage stage = new Stage();
-                stage.setTitle("Cookorama - Products");
+                stage.setTitle("Cookorama - Produits");
                 stage.setScene(new Scene(root));
                 stage.show();
                 ((Stage) btnProduct.getScene().getWindow()).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else if (event.getSource() == btnHome) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home.fxml"));
+            Parent root;
+            try {
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Cookorama - Accueil");
+                stage.setScene(new Scene(root));
+                stage.show();
+                ((Stage) btnHome.getScene().getWindow()).close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
