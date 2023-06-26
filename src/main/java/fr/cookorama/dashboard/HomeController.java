@@ -1,15 +1,9 @@
 package fr.cookorama.dashboard;
 
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Label;
-import javafx.scene.layout.Pane;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller {
+public class HomeController {
 
     private String token;
 

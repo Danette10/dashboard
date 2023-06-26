@@ -58,7 +58,7 @@ public class ConnectController implements Initializable{
                 Parent root;
                 try {
                     root = fxmlLoader.load();
-                    Controller controller = fxmlLoader.getController();
+                    HomeController controller = fxmlLoader.getController();
                     controller.setToken(token);
                     Scene scene = new Scene(root);
                     Stage stage = (Stage) btnConnect.getScene().getWindow();
