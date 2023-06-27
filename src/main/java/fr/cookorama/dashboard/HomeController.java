@@ -48,6 +48,10 @@ public class HomeController implements Initializable {
         this.token = token;
     }
 
+    public String getToken() {
+        return token;
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources){
         int countCustomers = HomeData.getNbCustomers(token);
