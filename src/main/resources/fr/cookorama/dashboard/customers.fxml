@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -46,5 +48,14 @@
                     </children>
                 </Pane>
             </children></VBox>
+      <Pane layoutX="357.0" layoutY="138.0" prefHeight="410.0" prefWidth="720.0">
+         <children>
+             <PieChart fx:id="customersChart" layoutX="108.0" prefHeight="410.0" prefWidth="505.0" startAngle="50.0" title="Type de clients">
+                 <rotationAxis>
+                     <Point3D />
+                 </rotationAxis>
+             </PieChart>
+         </children>
+      </Pane>
     </children>
 </AnchorPane>
