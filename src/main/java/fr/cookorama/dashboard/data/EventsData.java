@@ -7,5 +7,10 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class to get data from the events page
+ *
+ * @see EventsData
+ */
 public class EventsData {
 }

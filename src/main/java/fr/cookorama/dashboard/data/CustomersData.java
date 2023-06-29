@@ -9,8 +9,19 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class to get data from the customers page
+ *
+ * @see CustomersData
+ */
 public class CustomersData {
 
+    /**
+     * Method to get the number of customers by type of subscription
+     *
+     * @param customersChart PieChart to display the data
+     * @param token Token of the user
+     */
     public static void loadCustomersChart(PieChart customersChart, String token){
 
         CUrl curl = new CUrl("https://cookorama.fr/api/customers/chart");

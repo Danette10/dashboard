@@ -16,42 +16,75 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * Controller for the home page
+ *
+ * @see Initializable
+ * @see HomeController
+ * @see HomeData
+ */
+
 public class HomeController implements Initializable {
 
+    /** Button to go to the home page */
     @FXML
     private Button btnHome;
 
+    /** Button to go to the customers page */
     @FXML
     private Button btnCustomers;
 
+    /** Button to go to the events page */
     @FXML
     private Button btnEvents;
 
+    /** Button to go to the products page */
     @FXML
     private Button btnProduct;
 
+    /** Button to exit the application */
     @FXML
     private Button btnExit;
 
+    /** Label to display the number of customers */
     @FXML
     private Label nbCustomer;
 
+    /** Label to display the number of events */
     @FXML
     private Label nbEvents;
 
+    /** Label to display the number of products */
     @FXML
     private Label nbProducts;
 
+    /** Token to access the API */
     private String token;
 
+    /**
+     * Method to set the token
+     *
+     * @param token Token to access the API
+     */
     public void setToken(String token) {
         this.token = token;
     }
 
+    /**
+     * Method to get the token
+     *
+     * @return Token to access the API
+     */
     public String getToken() {
         return token;
     }
 
+    /**
+     * Method to initialize the home page
+     *
+     * @param location  Location of the FXML file
+     * @param resources Resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources){
         int countCustomers = HomeData.getNbCustomers(token);
@@ -84,6 +117,11 @@ public class HomeController implements Initializable {
 
     }
 
+    /**
+     * Method to handle the clicks on the buttons
+     *
+     * @param event Event
+     */
     @FXML
     private void handleClicks(ActionEvent event){
         if (event.getSource() == btnExit) {

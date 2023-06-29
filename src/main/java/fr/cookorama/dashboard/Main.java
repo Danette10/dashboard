@@ -8,6 +8,11 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
+/**
+ * Main class to launch the application
+ *
+ * @see Application
+ */
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {

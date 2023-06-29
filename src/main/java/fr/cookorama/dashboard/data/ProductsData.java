@@ -7,5 +7,10 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class to get data from the products page
+ *
+ * @see ProductsData
+ */
 public class ProductsData {
 }

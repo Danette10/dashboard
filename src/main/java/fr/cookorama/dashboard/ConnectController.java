@@ -18,20 +18,39 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 
+/**
+ * Controller for the connection page
+ *
+ * @see Initializable
+ * @see ConnectController
+ */
 public class ConnectController implements Initializable{
 
+    /** Button to connect to the application */
     @FXML
     private Button btnConnect;
 
+    /** Button to exit the application */
     @FXML
     private Button btnExit;
 
+    /** Input to enter the email */
     @FXML
     private TextField inputEmail;
 
+    /** Input to enter the password */
     @FXML
     private PasswordField inputPassword;
 
+
+    /**
+     * Method to initialize the controller
+     *
+     * @param location
+     * @param resources
+     *
+     * @see Initializable
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         inputEmail.setOnKeyPressed(event -> {
@@ -47,6 +66,13 @@ public class ConnectController implements Initializable{
         });
     }
 
+    /**
+     * Method to handle the clicks on the buttons
+     *
+     * @param event
+     *
+     * @see ActionEvent
+     */
     @FXML
     private void handleClicks(ActionEvent event){
         if (event.getSource() == btnConnect) {

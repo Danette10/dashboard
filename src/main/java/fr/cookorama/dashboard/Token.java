@@ -4,7 +4,21 @@ import org.json.*;
 
 import com.roxstudio.utils.CUrl;
 
+/**
+ * Class to get the token of the user
+ *
+ * @see Token
+ */
+
 public class Token {
+
+    /**
+     * Method to get the token of the user
+     *
+     * @param email Email of the user
+     * @param password Password of the user
+     * @return Token of the user
+     */
     public static String getToken(String email, String password) {
 
         CUrl curl = new CUrl("https://cookorama.fr/api/user/connect");
