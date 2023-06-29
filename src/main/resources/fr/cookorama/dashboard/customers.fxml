@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -8,6 +10,11 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1114.0" styleClass="btnPane" stylesheets="@css/dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.cookorama.dashboard.CustomersController">
     <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="614.0" layoutY="61.0" prefHeight="46.0" prefWidth="150.0" style="-fx-text-fill: #FF9B90;" text="Clients" underline="true">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Label>
         <VBox prefHeight="600.0" prefWidth="304.0">
             <children>
                 <ImageView fitHeight="117.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true">
@@ -41,5 +48,14 @@
                     </children>
                 </Pane>
             </children></VBox>
+      <Pane layoutX="357.0" layoutY="138.0" prefHeight="410.0" prefWidth="720.0">
+         <children>
+             <PieChart fx:id="customersChart" layoutX="75.0" prefHeight="410.0" prefWidth="505.0" startAngle="50.0" title="Type de clients">
+                 <rotationAxis>
+                     <Point3D />
+                 </rotationAxis>
+             </PieChart>
+         </children>
+      </Pane>
     </children>
 </AnchorPane>
